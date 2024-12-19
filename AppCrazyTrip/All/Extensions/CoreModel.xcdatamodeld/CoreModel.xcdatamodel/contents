@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="22758" systemVersion="23B74" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithSwiftData="YES" userDefinedModelVersionIdentifier="">
+    <entity name="ItemsModel" representedClassName="ItemsModel" syncable="YES" codeGenerationType="class">
+        <attribute name="itCity" optional="YES" attributeType="String"/>
+        <attribute name="itPhoto" optional="YES" attributeType="String"/>
+        <attribute name="itSig1" optional="YES" attributeType="String"/>
+        <attribute name="itSig2" optional="YES" attributeType="String"/>
+        <attribute name="itSig3" optional="YES" attributeType="String"/>
+        <attribute name="itSig4" optional="YES" attributeType="String"/>
+        <attribute name="itSumSig" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="PlanModel" representedClassName="PlanModel" syncable="YES" codeGenerationType="class">
+        <attribute name="plCity1" optional="YES" attributeType="String"/>
+        <attribute name="plCity2" optional="YES" attributeType="String"/>
+        <attribute name="plCity3" optional="YES" attributeType="String"/>
+        <attribute name="plCity4" optional="YES" attributeType="String"/>
+        <attribute name="plCountry" optional="YES" attributeType="String"/>
+        <attribute name="plDay" optional="YES" attributeType="String"/>
+        <attribute name="plNT" optional="YES" attributeType="String"/>
+        <attribute name="plPhoto" optional="YES" attributeType="String"/>
+        <attribute name="plSig1" optional="YES" attributeType="String"/>
+        <attribute name="plSig2" optional="YES" attributeType="String"/>
+        <attribute name="plSig3" optional="YES" attributeType="String"/>
+        <attribute name="plSig4" optional="YES" attributeType="String"/>
+        <attribute name="plSumCity" optional="YES" attributeType="String"/>
+        <attribute name="plSumSights" optional="YES" attributeType="String"/>
+        <attribute name="plTP" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="SightModel" representedClassName="SightModel" syncable="YES" codeGenerationType="class">
+        <attribute name="sigName" optional="YES" attributeType="String"/>
+        <attribute name="sigPhoto" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="TicketModel" representedClassName="TicketModel" syncable="YES" codeGenerationType="class">
+        <attribute name="ticCountry" optional="YES" attributeType="String"/>
+        <attribute name="ticNT" optional="YES" attributeType="String"/>
+        <attribute name="ticTP" optional="YES" attributeType="String"/>
+    </entity>
+</model>
