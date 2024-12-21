@@ -26,12 +26,6 @@ struct LoadingView: View {
                 
                 Spacer()
                 
-                Image("mlog")
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .frame(width: 70)
-                    .padding()
-                
                 ProgressView()
                        .progressViewStyle(CircularProgressViewStyle(tint: Color.white))
                        .padding()
