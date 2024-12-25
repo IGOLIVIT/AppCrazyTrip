@@ -40,6 +40,9 @@
 		7838F2AB2D10966D00BCE063 /* s6.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7838F2AA2D10966D00BCE063 /* s6.swift */; };
 		7838F2AD2D10967200BCE063 /* s7.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7838F2AC2D10967200BCE063 /* s7.swift */; };
 		7838F2AF2D10968000BCE063 /* SViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7838F2AE2D10968000BCE063 /* SViewModel.swift */; };
+		786334242D1C6B2B00C3844F /* BaggageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786334232D1C6B2B00C3844F /* BaggageView.swift */; };
+		786334272D1C6B6600C3844F /* EditBaggage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786334262D1C6B6600C3844F /* EditBaggage.swift */; };
+		7863342A2D1C6B8B00C3844F /* AddBaggage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786334292D1C6B8B00C3844F /* AddBaggage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -78,6 +81,9 @@
 		7838F2AA2D10966D00BCE063 /* s6.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = s6.swift; sourceTree = "<group>"; };
 		7838F2AC2D10967200BCE063 /* s7.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = s7.swift; sourceTree = "<group>"; };
 		7838F2AE2D10968000BCE063 /* SViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SViewModel.swift; sourceTree = "<group>"; };
+		786334232D1C6B2B00C3844F /* BaggageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaggageView.swift; sourceTree = "<group>"; };
+		786334262D1C6B6600C3844F /* EditBaggage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditBaggage.swift; sourceTree = "<group>"; };
+		786334292D1C6B8B00C3844F /* AddBaggage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBaggage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -284,6 +290,7 @@
 		7838F2842D108B0C00BCE063 /* Plan */ = {
 			isa = PBXGroup;
 			children = (
+				786334222D1C6B1200C3844F /* BaggageView */,
 				780598132D11C47800639AA8 /* AddTicket */,
 				780598102D11C33E00639AA8 /* EditTickets */,
 				7805980D2D11A11600639AA8 /* TicketsView */,
@@ -314,6 +321,32 @@
 				7838F2892D108B5E00BCE063 /* SettingsView.swift */,
 			);
 			path = Settings;
+			sourceTree = "<group>";
+		};
+		786334222D1C6B1200C3844F /* BaggageView */ = {
+			isa = PBXGroup;
+			children = (
+				786334282D1C6B8300C3844F /* AddBaggage */,
+				786334252D1C6B5B00C3844F /* EditBaggage */,
+				786334232D1C6B2B00C3844F /* BaggageView.swift */,
+			);
+			path = BaggageView;
+			sourceTree = "<group>";
+		};
+		786334252D1C6B5B00C3844F /* EditBaggage */ = {
+			isa = PBXGroup;
+			children = (
+				786334262D1C6B6600C3844F /* EditBaggage.swift */,
+			);
+			path = EditBaggage;
+			sourceTree = "<group>";
+		};
+		786334282D1C6B8300C3844F /* AddBaggage */ = {
+			isa = PBXGroup;
+			children = (
+				786334292D1C6B8B00C3844F /* AddBaggage.swift */,
+			);
+			path = AddBaggage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -403,12 +436,15 @@
 				7838F2A32D10965600BCE063 /* s2.swift in Sources */,
 				7838F2982D1095FF00BCE063 /* DateConvert.swift in Sources */,
 				7838F2A52D10965E00BCE063 /* s3.swift in Sources */,
+				786334272D1C6B6600C3844F /* EditBaggage.swift in Sources */,
 				7805980C2D11934400639AA8 /* SightDetail.swift in Sources */,
 				7838F2A72D10966300BCE063 /* s4.swift in Sources */,
 				7838F28C2D108FBD00BCE063 /* ItemsView.swift in Sources */,
+				786334242D1C6B2B00C3844F /* BaggageView.swift in Sources */,
 				7838F2922D108FD900BCE063 /* PlanViewModel.swift in Sources */,
 				7805980F2D11A16700639AA8 /* TicketsView.swift in Sources */,
 				7838F2A92D10966800BCE063 /* s5.swift in Sources */,
+				7863342A2D1C6B8B00C3844F /* AddBaggage.swift in Sources */,
 				780598032D11931800639AA8 /* AddCity.swift in Sources */,
 				780598092D11933100639AA8 /* CityDetail.swift in Sources */,
 				7838F2902D108FCF00BCE063 /* PlanView.swift in Sources */,

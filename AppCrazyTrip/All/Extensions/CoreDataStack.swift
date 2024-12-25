@@ -136,4 +136,27 @@ class CoreDataStack {
             print("Error fetching: \(error)")
         }
     }
+    
+    func deleteBag(withBagWeight name: String, completion: @escaping () -> Void) {
+
+        let context = CoreDataStack.shared.persistentContainer.viewContext
+        let fetchRequest: NSFetchRequest<BagModel> = BagModel.fetchRequest()
+
+        fetchRequest.predicate = NSPredicate(format: "bagWeight == %@", name)
+
+        do {
+            let objects = try context.fetch(fetchRequest)
+
+            for object in objects {
+                context.delete(object)
+            }
+
+            CoreDataStack.shared.saveContext()
+
+            completion()
+
+        } catch {
+            print("Error fetching: \(error)")
+        }
+    }
 }

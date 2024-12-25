@@ -13,6 +13,8 @@ final class PlanViewModel: ObservableObject {
     @AppStorage("totalTickets") var totalTickets: Int = 0
     @AppStorage("totalCountries") var totalCountries: Int = 0
     @AppStorage("totalSum") var totalSum: Int = 0
+    @AppStorage("totalWeight") var totalWeight: Int = 0
+    @AppStorage("totalBags") var totalBags: Int = 0
 
     @Published var photos: [String] = ["France", "USA", "Italy", "Germany", "South Korea", "New Zeland"]
     @Published var currentPhoto = ""
@@ -28,6 +30,12 @@ final class PlanViewModel: ObservableObject {
     @Published var isDeleteTic: Bool = false
     @Published var isEditTickets: Bool = false
     @Published var isAddTicket: Bool = false
+    @Published var isBaggage: Bool = false
+    
+    @Published var isBagss: Bool = false
+    @Published var isDeleteBag: Bool = false
+    @Published var isEditBagss: Bool = false
+    @Published var isAddBag: Bool = false
 
     @Published var plPhoto: String = ""
     @Published var plCountry: String = ""
@@ -130,6 +138,46 @@ final class PlanViewModel: ObservableObject {
             print("Error fetching persons: \(error), \(error.userInfo)")
 
             self.tickets = []
+        }
+    }
+    
+    @Published var bagCountry: String = ""
+    @Published var bagNumber: String = ""
+    @Published var bagWeight: String = ""
+
+    @Published var bags: [BagModel] = []
+    @Published var selectedBag: BagModel?
+
+    func addBag() {
+
+        let context = CoreDataStack.shared.persistentContainer.viewContext
+        let loan = NSEntityDescription.insertNewObject(forEntityName: "BagModel", into: context) as! BagModel
+
+        loan.bagCountry = bagCountry
+        loan.bagNumber = bagNumber
+        loan.bagWeight = bagWeight
+
+        CoreDataStack.shared.saveContext()
+    }
+
+    func fetchBags() {
+
+        let context = CoreDataStack.shared.persistentContainer.viewContext
+        let fetchRequest = NSFetchRequest<BagModel>(entityName: "BagModel")
+
+        do {
+
+            let result = try context.fetch(fetchRequest)
+
+            self.bags = result
+
+        } catch let error as NSError {
+
+            print("catch")
+
+            print("Error fetching persons: \(error), \(error.userInfo)")
+
+            self.bags = []
         }
     }
 }

@@ -32,6 +32,19 @@ struct PlanView: View {
                         
                         withAnimation(.spring()) {
                             
+                            viewModel.isBaggage = true
+                        }
+                        
+                    }, label: {
+                        
+                        Image("weight")
+                    })
+                    .padding(.trailing)
+                    
+                    Button(action: {
+                        
+                        withAnimation(.spring()) {
+                            
                             viewModel.isTickets = true
                         }
                         
@@ -237,6 +250,10 @@ struct PlanView: View {
         .sheet(isPresented: $viewModel.isTickets, content: {
             
             TicketsView(viewModel: viewModel)
+        })
+        .sheet(isPresented: $viewModel.isBaggage, content: {
+            
+            BaggageView(viewModel: viewModel)
         })
     }
 }

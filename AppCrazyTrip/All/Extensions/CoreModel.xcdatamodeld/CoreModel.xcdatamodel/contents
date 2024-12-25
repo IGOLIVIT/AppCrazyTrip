@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="22758" systemVersion="23B74" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithSwiftData="YES" userDefinedModelVersionIdentifier="">
+    <entity name="BagModel" representedClassName="BagModel" syncable="YES" codeGenerationType="class">
+        <attribute name="bagCountry" optional="YES" attributeType="String"/>
+        <attribute name="bagNumber" optional="YES" attributeType="String"/>
+        <attribute name="bagWeight" optional="YES" attributeType="String"/>
+    </entity>
     <entity name="ItemsModel" representedClassName="ItemsModel" syncable="YES" codeGenerationType="class">
         <attribute name="itCity" optional="YES" attributeType="String"/>
         <attribute name="itPhoto" optional="YES" attributeType="String"/>
