@@ -43,6 +43,9 @@
 		786334242D1C6B2B00C3844F /* BaggageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786334232D1C6B2B00C3844F /* BaggageView.swift */; };
 		786334272D1C6B6600C3844F /* EditBaggage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786334262D1C6B6600C3844F /* EditBaggage.swift */; };
 		7863342A2D1C6B8B00C3844F /* AddBaggage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786334292D1C6B8B00C3844F /* AddBaggage.swift */; };
+		7863357E2D2EE49F00C3844F /* Smugbopl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7863357D2D2EE49F00C3844F /* Smugbopl.swift */; };
+		786335802D2EE4B300C3844F /* Wmasynmu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7863357F2D2EE4B300C3844F /* Wmasynmu.swift */; };
+		786335822D2EE4C000C3844F /* Doemaio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786335812D2EE4C000C3844F /* Doemaio.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -84,6 +87,9 @@
 		786334232D1C6B2B00C3844F /* BaggageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaggageView.swift; sourceTree = "<group>"; };
 		786334262D1C6B6600C3844F /* EditBaggage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditBaggage.swift; sourceTree = "<group>"; };
 		786334292D1C6B8B00C3844F /* AddBaggage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBaggage.swift; sourceTree = "<group>"; };
+		7863357D2D2EE49F00C3844F /* Smugbopl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Smugbopl.swift; sourceTree = "<group>"; };
+		7863357F2D2EE4B300C3844F /* Wmasynmu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wmasynmu.swift; sourceTree = "<group>"; };
+		786335812D2EE4C000C3844F /* Doemaio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Doemaio.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -242,6 +248,9 @@
 				7838F2952D1095F600BCE063 /* Array.swift */,
 				7838F2972D1095FF00BCE063 /* DateConvert.swift */,
 				7838F2992D10960700BCE063 /* CoreModel.xcdatamodeld */,
+				7863357D2D2EE49F00C3844F /* Smugbopl.swift */,
+				7863357F2D2EE4B300C3844F /* Wmasynmu.swift */,
+				786335812D2EE4C000C3844F /* Doemaio.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -443,11 +452,14 @@
 				786334242D1C6B2B00C3844F /* BaggageView.swift in Sources */,
 				7838F2922D108FD900BCE063 /* PlanViewModel.swift in Sources */,
 				7805980F2D11A16700639AA8 /* TicketsView.swift in Sources */,
+				786335802D2EE4B300C3844F /* Wmasynmu.swift in Sources */,
 				7838F2A92D10966800BCE063 /* s5.swift in Sources */,
 				7863342A2D1C6B8B00C3844F /* AddBaggage.swift in Sources */,
+				786335822D2EE4C000C3844F /* Doemaio.swift in Sources */,
 				780598032D11931800639AA8 /* AddCity.swift in Sources */,
 				780598092D11933100639AA8 /* CityDetail.swift in Sources */,
 				7838F2902D108FCF00BCE063 /* PlanView.swift in Sources */,
+				7863357E2D2EE49F00C3844F /* Smugbopl.swift in Sources */,
 				7838F29F2D10963900BCE063 /* LoadingView.swift in Sources */,
 				780598062D11932400639AA8 /* AddSight.swift in Sources */,
 				7838F2AD2D10967200BCE063 /* s7.swift in Sources */,
@@ -580,11 +592,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = AppCrazyTrip/AppCrazyTrip.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"AppCrazyTrip/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "VoyageFlow: Vacation Planner";
+				INFOPLIST_KEY_CFBundleDisplayName = "Crazy: Time for Vacation \n";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -600,7 +612,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.1;
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = IOI.AppCrazyTrip;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
@@ -619,11 +631,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = AppCrazyTrip/AppCrazyTrip.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"AppCrazyTrip/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "VoyageFlow: Vacation Planner";
+				INFOPLIST_KEY_CFBundleDisplayName = "Crazy: Time for Vacation \n";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -639,7 +651,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.1;
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = IOI.AppCrazyTrip;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
